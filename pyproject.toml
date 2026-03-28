@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "crypto-waves"
+version = "1.3.0"
+description = "Crypto wave pattern analyzer with ZigZag, SMA/EMA crossovers, and RSI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "ccxt>=4.0.0",
+    "pandas>=2.0.0",
+    "matplotlib>=3.7.0",
+]
+
+[project.scripts]
+waves = "waves:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["waves*"]
