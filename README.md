@@ -65,8 +65,37 @@ waves --deviation 5 --timeframe 1h
 
 ## Output
 
-- Terminal: current price, RSI 14, SMA/EMA 50, crossover status, and labeled wave points
-- File: `SYMBOL_TIMEFRAME_MODE.png` saved in the current directory
+```
+Fetching 300 4h candles for ETH/USDT...
+
+
+=== ETH/USDT 4h ANALYSIS ===
+Current Date      : 2026-03-28 04:00
+Current Price     : $1992.80
+RSI 14            : 10.6
+SMA 200           : $2062.52
+EMA 50            : $2098.30
+Crossover Status  : BEARISH CROSSOVER on 2026-02-06 08:00 @ $1932.77
+
+ZigZag Deviation  : 9.8% → 10 points
+
+WAVE POINTS:
+A  →    2151.67 (HIGH   )
+B  →    1896.76 (LOW    )
+C  →    2107.91 (HIGH   )
+D  →    1799.57 (LOW    )
+E  →    2150.37 (HIGH   )
+F  →    1834.84 (LOW    )
+G  →    2200.02 (HIGH   )
+H  →    1910.91 (LOW    )
+I  →    2386.07 (HIGH   )
+J  →     1992.8 (CURRENT)
+
+AI One-liner:
+ETH/USDT 4h wave: A=2151.67 → B=1896.76 → C=2107.91 → D=1799.57 → E=2150.37 → F=1834.84 → G=2200.02 → H=1910.91 → I=2386.07 → J=1992.8
+
+✅ Chart saved as: ETH_USDT_4h_line.png
+```
 
 ## Requirements
 
